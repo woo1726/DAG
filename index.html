@@ -195,7 +195,7 @@
 	<center>
 		<table align=center width=850px>
 			<tr>
-				<td width=260px>
+				<td width=850px>
 					<center>
 						<img class="round" style="width:1000px" src="./resources/main.png"/>
 					</center>
@@ -223,24 +223,7 @@
 	</table>
 	<br>
 
-	<hr>
-	<center><h1>Talk</h1></center>
-	<p align="center">
-		<iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
-	</p>
-
-	<table align=center width=800px>
-		<br>
-		<tr>
-			<center>
-				<span style="font-size:28px"><a href=''>[Slides]</a>
-				</span>
-			</center>
-		</tr>
-	</table>
-	<hr>
-
-	<center><h1>Code</h1></center>
+	<center><h1>Overview of our Framework</h1></center>
 
 	<table align=center width=420px>
 		<center>
@@ -254,7 +237,7 @@
 		<tr>
 			<td align=center width=400px>
 				<center>
-					<td><img class="round" style="width:450px" src="./resources/method_diagram.png"/></td>
+					<td><img class="round" style="width:850px" src="./resources/method.png"/></td>
 				</center>
 			</td>
 		</tr>
@@ -263,7 +246,7 @@
 		<center>
 			<tr>
 				<td>
-					Short description if wanted
+					First of all, we train asymmetric pixel-wise depth predictor conditioned on a timestep with respect to pretrained diffusion models in a label-efficient manner. Then, we apply two guidance strategies. First, we extract strong and weak depth maps with this predictor from DDPM network and give a depth consistency guidance. Next, giving the depth map from the strong branch as an input, the pretrained depth diffusion model is utilized to push the model prior into intermediate images to be depth-aware.
 				</td>
 			</tr>
 		</center>
